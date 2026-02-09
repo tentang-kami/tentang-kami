@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Valentine's Day ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Music -->
+<audio id="bg-music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="click-sound">
+  <source src="click.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Opening Page -->
+<section class="section active" id="opening">
+  <h1>Happy Valentine’s Day ❤️</h1>
+  <p>Untuk seseorang yang selalu membuat hariku lebih indah</p>
+  <button onclick="startLove()">Klik di sini ❤️</button>
+</section>
+
+<!-- Love Message -->
+<section class="section" id="message">
+  <h2>Untuk Kamu 💕</h2>
+  <div id="typing-text"></div>
+</section>
+
+<!-- Memory Section -->
+<section class="section" id="memory">
+  <h2>Kenangan Kita 📸</h2>
+  <div class="gallery">
+    <div class="card">
+      <img src="img/photo1.jpg">
+      <p>Senyummu favoritku</p>
+    </div>
+    <div class="card">
+      <img src="img/photo2.jpg">
+      <p>Hari paling bahagia</p>
+    </div>
+    <div class="card">
+      <img src="img/photo3.jpg">
+      <p>Selalu bersama ❤️</p>
+    </div>
+  </div>
+</section>
+
+<!-- Question -->
+<section class="section" id="question">
+  <h2>Will you be my Valentine forever? 💘</h2>
+  <div class="buttons">
+    <button onclick="finalScreen()">YES ❤️</button>
+    <button onclick="finalScreen()">OF COURSE 😘</button>
+    <button id="no-btn">NO 🙃</button>
+  </div>
+</section>
+
+<!-- Final Screen -->
+<section class="section" id="final">
+  <h1>I love you more than words can say ❤️</h1>
+  <canvas id="hearts"></canvas>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
